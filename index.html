@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bài tập JS - Buổi 15</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS -->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+        />
+    </head>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./style.css" />
+    <body>
+        <!-- Bài tập 1 -->
+        <div class="ex1 mt-3">
+            <div class="container">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Bài 1: Quản lý tuyển sinh</h3>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-row">
+                                <div class="col-6">
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        placeholder="Nhập điểm chuẩn"
+                                        id="standardScore"
+                                    />
+                                </div>
+                                <div class="col-6">
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        placeholder="Nhập điểm thi của 3 môn"
+                                        id="threeScore"
+                                    />
+                                </div>
+                                <div
+                                    class="col-6 mt-3 align-items-center justify-content-center"
+                                >
+                                    <label class="col pl-0" for="location"
+                                        >Chọn khu vực:
+                                    </label>
+                                    <select
+                                        id="location"
+                                        class="form-control col"
+                                    >
+                                        <option value="A">A</option>
+                                        <option value="B">B</option>
+                                        <option value="C">C</option>
+                                    </select>
+                                </div>
+                                <div
+                                    class="col-6 mt-3 align-items-center justify-content-center"
+                                >
+                                    <label class="col pl-0" for="location"
+                                        >Chọn đối tượng:
+                                    </label>
+                                    <select
+                                        id="object"
+                                        class="form-control col"
+                                    >
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </form>
+                        <button
+                            class="btn btn-success mt-3"
+                            id="btnSumScore"
+                        >
+                            Tính kết quả
+                        </button>
+                    </div>
+                    <div class="card-footer text-muted">
+                        <p class="my-0">
+                            👉 Kết quả: <span id="result"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bài tập 2 -->
+        <div class="ex2 mt-3">
+            <div class="container">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Bài 2: Tính tiền điện</h3>
+                    </div>
+                    <div class="card-body">
+                        <form action="">
+                            <div class="form-row">
+                                <div class="col-6">
+                                    <input
+                                        type="text"
+                                        placeholder="Nhập tên:"
+                                        class="form-control"
+                                        id="name2"
+                                    />
+                                </div>
+                                <div class="col-6">
+                                    <input
+                                        type="text"
+                                        placeholder="Nhập số Kw:"
+                                        class="form-control"
+                                        id="kw"
+                                    />
+                                </div>
+                            </div>
+                        </form>
+                        <button
+                            class="btn btn-danger mt-3"
+                            id="paymentBtnB2"
+                        >
+                            Tính tiền điện
+                        </button>
+                    </div>
+                    <div class="card-footer text-muted">
+                        <p class="my-0">👉 <span id="paymentB2"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bài 3 -->
+        <div class="ex3 mt-3">
+            <div class="container">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Bài 3: Tính thuế thu nhập cá nhân</h3>
+                    </div>
+                    <div class="card-body">
+                        <form action="">
+                            <div class="form-row">
+                                <div class="col-4">
+                                    <input
+                                        type="text"
+                                        placeholder="Nhập tên:"
+                                        class="form-control"
+                                        id="name3"
+                                    />
+                                </div>
+                                <div class="col-4">
+                                    <input
+                                        type="text"
+                                        placeholder="Nhập tổng thu nhập năm:"
+                                        class="form-control"
+                                        id="income"
+                                    />
+                                </div>
+                                <div class="col-4">
+                                    <input
+                                        type="text"
+                                        placeholder="Nhập số người phụ thuộc:"
+                                        class="form-control"
+                                        id="people"
+                                    />
+                                </div>
+                            </div>
+                        </form>
+                        <button class="btn btn-dark mt-3" id="paymentBtnB3">
+                            Tính tiền thuế
+                        </button>
+                    </div>
+                    <div class="card-footer text-muted">
+                        <p class="my-0">👉 <span id="paymentB3"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bài 4 -->
+        <div class="ex4 my-3">
+            <div class="container">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Bài 4: Tính tiền cáp</h3>
+                    </div>
+                    <div class="card-body">
+                        <form action="">
+                            <div class="form-row">
+                                <div class="col-4">
+                                    <label for="customerType"
+                                        >Chọn loại khách hàng:
+                                    </label>
+                                    <select
+                                        name=""
+                                        id="customerType"
+                                        class="form-control"
+                                        onchange="connectionOnOff()"
+                                    >
+                                        <option value="residential">
+                                            Nhà dân
+                                        </option>
+                                        <option value="commercial">
+                                            Doanh nghiệp
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="col-4">
+                                    <label for="customerId"
+                                        >Nhập mã khách hàng:
+                                    </label>
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="customerId"
+                                    />
+                                </div>
+                                <div class="col-4">
+                                    <label for="premiumChannel"
+                                        >Nhập số kênh cao cấp:
+                                    </label>
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="premiumChannel"
+                                    />
+                                </div>
+                                <div class="col-4">
+                                    <input
+                                        style="display: none"
+                                        type="text"
+                                        class="form-control mt-3"
+                                        id="connection"
+                                        placeholder="Nhập số kết nối: "
+                                    />
+                                </div>
+                            </div>
+                        </form>
+                        <button
+                            class="btn btn-warning mt-3"
+                            id="paymentBtnB4"
+                        >
+                            Tính tiền cáp
+                        </button>
+                    </div>
+                    <div class="card-footer text-muted">
+                        <p class="my-0">👉 <span id="paymentB4"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- Main JS -->
+        <script src="./main.js"></script>
+    </body>
+</html>
